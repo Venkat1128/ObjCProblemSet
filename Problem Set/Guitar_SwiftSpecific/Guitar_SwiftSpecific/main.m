@@ -7,13 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Guitar_SwiftSpecific-Swift.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         Guitarist *jimiHendrix = [[Guitarist alloc]init];
         Note *firstNote = [[Note alloc] initWithVelocity:0.9];
-        Note *secondNote = [[Note alloc] initWithVelocity:0.7];
-        NSArray *notes = @[firstNote, secondNote];
+        Note *secondNote = [[Note alloc] initWithVelocity:0.6];
+        Note *thirdNote = [[Note alloc] initWithVelocity:0.7];
+        NSArray *notes = @[firstNote,secondNote,thirdNote];
         [jimiHendrix perform: notes];
     }
     return 0;
