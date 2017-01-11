@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "RPSGame.h"
 @interface RPSController : NSObject
 
 @property (nonatomic) RPSGame *game;

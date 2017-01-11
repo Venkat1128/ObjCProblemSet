@@ -7,7 +7,7 @@
 //
 
 #import "RPSGame.h"
-
+@ class RPSTurn;
 @implementation RPSGame
 
 -(instancetype)initWithFirstTurn:(RPSTurn*) playerTurn

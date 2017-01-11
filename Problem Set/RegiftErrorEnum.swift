@@ -9,8 +9,8 @@
 import Foundation
 
 // Errors thrown by Regift
-public enum RegiftError: String, ErrorType {
-    case DestinationNotFound = "The temp file destination could not be created or found"
-    case AddFrameToDestination = "An error occurred when adding a frame to the destination"
-    case DestinationFinalize = "An error occurred when finalizing the destination"
+@objc enum RegiftError: Int, ErrorType {
+    case DestinationNotFound = 555
+    case AddFrameToDestination = 556
+    case DestinationFinalize = 557
 }
