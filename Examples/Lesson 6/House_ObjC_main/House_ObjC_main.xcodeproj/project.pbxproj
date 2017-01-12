@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82048FA81E27837600C2C7E8 /* HotTub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82048FA71E27837600C2C7E8 /* HotTub.swift */; };
 		A94CC3CA1D21BD7C00DC758E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CC3C91D21BD7C00DC758E /* main.m */; };
 		A94CC3D41D21BDA100DC758E /* Bedroom.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CC3D11D21BDA100DC758E /* Bedroom.m */; };
 		A94CC3D51D21BDA100DC758E /* House.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CC3D31D21BDA100DC758E /* House.m */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		82048FA61E27837500C2C7E8 /* House_ObjC_main-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "House_ObjC_main-Bridging-Header.h"; sourceTree = "<group>"; };
+		82048FA71E27837600C2C7E8 /* HotTub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotTub.swift; sourceTree = "<group>"; };
 		A94CC3C61D21BD7C00DC758E /* House_ObjC_main */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = House_ObjC_main; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94CC3C91D21BD7C00DC758E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A94CC3D01D21BDA100DC758E /* Bedroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bedroom.h; sourceTree = "<group>"; };
@@ -68,6 +71,8 @@
 				A94CC3D11D21BDA100DC758E /* Bedroom.m */,
 				A94CC3D21D21BDA100DC758E /* House.h */,
 				A94CC3D31D21BDA100DC758E /* House.m */,
+				82048FA71E27837600C2C7E8 /* HotTub.swift */,
+				82048FA61E27837500C2C7E8 /* House_ObjC_main-Bridging-Header.h */,
 			);
 			path = House_ObjC_main;
 			sourceTree = "<group>";
@@ -103,6 +108,7 @@
 				TargetAttributes = {
 					A94CC3C51D21BD7C00DC758E = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -129,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A94CC3D51D21BDA100DC758E /* House.m in Sources */,
+				82048FA81E27837600C2C7E8 /* HotTub.swift in Sources */,
 				A94CC3D41D21BDA100DC758E /* Bedroom.m in Sources */,
 				A94CC3CA1D21BD7C00DC758E /* main.m in Sources */,
 			);
@@ -225,14 +232,23 @@
 		A94CC3CE1D21BD7C00DC758E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "House_ObjC_main/House_ObjC_main-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		A94CC3CF1D21BD7C00DC758E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "House_ObjC_main/House_ObjC_main-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
