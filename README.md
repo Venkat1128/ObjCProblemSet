@@ -1,1 +1,1 @@
-Working solutions for the Udacity The Objective-C Problem Set
+Working solutions for the Udacity Objective-C Problem Set
