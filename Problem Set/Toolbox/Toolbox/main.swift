@@ -23,5 +23,6 @@ if let toolCanScrew = tool as? Drill {
     (tool as AnyObject).screw()
     print("This tool can screw!")
 } else {
-    print("Boo hoo, this tool cannot screw!")
+    (tool as AnyObject).drive()
+    print("This tool can Hammer!")
 }
